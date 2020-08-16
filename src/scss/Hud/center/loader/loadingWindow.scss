@@ -1,0 +1,123 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+#loaderWindowCage {
+	z-index: 6;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	@include textWhiteShadow;
+
+	border: 1px solid $white-cyberpunk;
+
+	width: 500px;
+	height: 300px;
+
+	box-shadow: 0px 0px 2px 0px $white-cyberpunk, inset 0px 0px 2px 0px $white-cyberpunk;
+
+	text-align: left;
+
+	#loaderImageTop {
+		margin-left: -4px;
+		position: absolute;
+		width: calc(100% + 8px);
+		height: 30px;
+		margin-top: -35px;
+		background-repeat: repeat-x;
+		background-size: contain;
+		background-position: bottom;
+	}
+
+	.hrDiv {
+		background-color: $white-cyberpunk;
+		height: 1px;
+		box-shadow: 0px 0px 2px 0px $white-cyberpunk;
+	}
+
+	p {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.LoaderFoldCage {
+		padding: 8px 16px;
+
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		.loaderTittle {
+			font-size: 12px;
+			margin-bottom: 6px;
+		}
+
+		.loaderText {
+			font-size: 13px;
+
+			span {
+				font-size: 13px;
+
+				animation: blink-caret 0.75s step-end infinite;
+			}
+		}
+	}
+
+	.TerminalCage {
+		position: relative;
+	}
+
+	.hrDivLoadingCage {
+		width: 100%;
+		position: absolute;
+		bottom: 56px;
+	}
+
+	.LoadingCage {
+		position: absolute;
+		bottom: 6px;
+		width: calc(100% - 32px);
+	}
+
+	#proggressBarCage {
+		background-color: rgb(10, 10, 10);
+		width: 100%;
+		height: 14px;
+
+		#proggressBar {
+			background-color: #ec004d;
+			width: 0;
+			height: 100%;
+			box-shadow: 0px 0px 5px 1px #ec004d;
+			transition: 0.5s;
+		}
+	}
+
+	#qrCode {
+		position: fixed;
+		right: 16px;
+		bottom: 70px;
+		width: 40px;
+		height: 40px;
+		background-size: contain;
+		opacity: 0.2;
+
+		box-shadow: 0px 0px 3px 0px $white-cyberpunk;
+		filter: drop-shadow(0px 0px 4px $white-cyberpunk);
+	}
+
+	@media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+		width: calc(100% - 20px);
+		height: 250px;
+	}
+}
+
+@keyframes blink-caret {
+	from,
+	to {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}

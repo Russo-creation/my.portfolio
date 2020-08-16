@@ -1,0 +1,434 @@
+@import "../../../../variables.scss";
+@import "../../../../mixins.scss";
+
+#aboutRightText {
+  position: absolute;
+  left: 54%;
+  top: 15%;
+  height: 70%;
+  width: 46%;
+
+  transition: width 0.3s, left 0.3s;
+
+  @media screen and (max-width: 1325px), (max-height: $height-medium-device-1) {
+    left: 40%;
+    width: 60%;
+  }
+
+  @media screen and (max-width: $width-ipadpro-1), (max-height: $height-medium-device-1) {
+    left: 30%;
+    width: 70%;
+  }
+
+  @media screen and (max-width: $width-medium-device-0), (max-height: $height-medium-device-1) {
+    left: 10%;
+    width: 90%;
+  }
+
+  @media screen and (max-width: $width-medium-device-1), (max-height: $height-medium-device-1) {
+    left: 4%;
+    width: 96%;
+  }
+
+  #aboutTittle {
+    display: inline-block;
+    vertical-align: top;
+
+    text-shadow: 0px 0px 4px #c4c4c4;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+
+    width: 22px;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+
+    @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+      font-size: 11px;
+      width: 21px;
+    }
+  }
+
+  .virtualTracker {
+    width: 2px;
+    background-color: white;
+    opacity: 0.1;
+
+    position: absolute;
+    left: 36px;
+    top: 0px;
+
+    @media screen and (max-width: $width-medium-device-1), (max-height: $height-medium-device-1) {
+      left: 33px;
+    }
+
+    @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+      left: 31px;
+    }
+  }
+
+  #aboutLine {
+    display: inline-block;
+    vertical-align: top;
+    width: 5px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: rgb(196, 196, 196) 1px 0px 6px 0px;
+
+    @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+      width: 4px;
+    }
+  }
+  #aboutContent {
+    display: inline-block;
+    vertical-align: top; // middle if profile
+
+    padding-left: 30px;
+
+    overflow-y: hidden; //if about
+
+    height: 100%;
+
+    width: calc(100% - 57px);
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    position: relative;
+
+    #ProfileContener {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media screen and (max-width: $width-medium-device-1), (max-height: $height-medium-device-1) {
+      padding-left: 10px;
+      width: calc(100% - 37px);
+    }
+
+    @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+      width: calc(100% - 35px);
+    }
+
+    #profileSeparate {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .profileTittle {
+      font-size: 16px;
+      text-shadow: 0px 0px 4px #c4c4c4;
+      font-weight: bold;
+      margin-bottom: 6px;
+      width: 70%;
+
+      transition: 0.3s;
+      @media screen and (max-width: $width-ipad-1), (max-height: $height-medium-device-1) {
+        width: 90%;
+      }
+
+      @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+        font-size: 14px;
+      }
+    }
+
+    .profileText {
+      font-size: 14px;
+      color: #c4c4c4;
+      text-shadow: 0px 0px 4px #c4c4c4;
+      width: 70%;
+
+      transition: 0.3s;
+
+      @media screen and (max-width: $width-ipad-1), (max-height: $height-medium-device-1) {
+        width: 90%;
+      }
+      @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+        font-size: 12px;
+      }
+    }
+
+    ////////////////// tested value
+
+    .aLink {
+      color: white;
+      width: 90%;
+      display: block;
+    }
+
+    .certyficateBox {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+
+      //  transition: 0.3s linear;
+
+      position: relative;
+
+      .certSymbols {
+        display: inline-block;
+        vertical-align: middle;
+
+        margin-left: 3%;
+        width: 47%;
+        height: 130px;
+
+        .certSmallRect {
+          border: 2px solid white;
+          border-right-width: 0px;
+          margin-top: 19px;
+          height: 90px;
+          width: 22px;
+
+          transition: 0.3s linear;
+
+          @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+            margin-top: 29px;
+            height: 70px;
+            width: 17px;
+          }
+
+          .certBigRect {
+            border: 2px solid white;
+            width: 100px;
+            height: 68px;
+            margin-top: 9px;
+            margin-left: 9px;
+
+            position: relative;
+
+            transition: 0.3s linear;
+
+            @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+              width: 80px;
+              height: 49px;
+            }
+
+            .certIcon {
+              position: absolute;
+              bottom: 2px;
+              right: 10px;
+              text-align: right;
+              font-size: 24px;
+
+              @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+                font-size: 20px;
+                bottom: 3px;
+              }
+            }
+          }
+        }
+      }
+
+      .certData {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: right;
+        text-transform: uppercase;
+        width: 47%;
+
+        font-size: 14px;
+        letter-spacing: 2px;
+
+        .certDate {
+          width: 100%;
+          margin-bottom: 4px;
+          transition: 0.3s linear;
+        }
+        .certText {
+          width: 100%;
+          transition: 0.3s linear;
+        }
+
+        @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+          font-size: 12px;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        background: linear-gradient(90deg, rgba(236, 0, 77, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+
+        .certSymbols {
+          .certSmallRect {
+            border-color: $red-cyberpunk;
+            .certBigRect {
+              border-color: $red-cyberpunk;
+
+              color: $red-cyberpunk;
+            }
+          }
+        }
+
+        .certData {
+          color: $red-cyberpunk;
+          .certDate {
+            color: $red-cyberpunk;
+          }
+        }
+      }
+    }
+    .certyficateBoxFirst {
+      margin-top: 0px;
+    }
+
+    .certyficateBoxLast {
+      margin-bottom: 0px;
+    }
+  }
+
+  .skillType {
+    text-align: left;
+    padding: 10px 14px;
+    font-weight: bold;
+
+    font-size: 13px;
+    letter-spacing: 3px;
+
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+
+    @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+      font-size: 12px;
+    }
+  }
+
+  .skillLeftRatio,
+  .skillRightRatio,
+  .skillCenterHexagon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .skillLeftRatio {
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+
+    @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+      width: 90px;
+    }
+  }
+
+  .skillRatioCenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 15px;
+
+    @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+      font-size: 11px;
+    }
+
+    .skillRatio {
+      .skl_r {
+        display: inline-block;
+        height: 4px;
+        width: 20px;
+
+        &:nth-child(2),
+        &:nth-child(4) {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+
+        @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+          height: 3px;
+          width: 14px;
+        }
+      }
+
+      .skWhite {
+        background-color: white;
+        @include boxShadowWhiteOutsetInset;
+      }
+      .skGrey {
+        background-color: #363636;
+      }
+    }
+  }
+
+  .skillRightRatio {
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 10%;
+
+    @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+      width: 90px;
+      margin-right: 0%;
+    }
+  }
+
+  .skillCenterHexagon {
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+
+    @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+      width: 60px;
+    }
+  }
+
+  .skillRatioContener {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 90px;
+    position: relative;
+  }
+
+  .skillHexagon {
+    width: 90px;
+    height: 90px;
+
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    .hexagonContener {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 100%;
+      height: 100%;
+
+      svg {
+        filter: drop-shadow(0px 0px 4px #c4c4c4);
+      }
+    }
+
+    .hexagonIco {
+      fill: transparent;
+      stroke: white;
+      stroke-width: 3px;
+
+      @media screen and (max-width: $width-small-device-2), (max-height: $height-medium-device-1) {
+        stroke-width: 2px;
+      }
+    }
+
+    .skillIcon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      font-size: 50px;
+
+      padding-top: 15px;
+      padding-left: 2px;
+
+      @media screen and (max-width: $width-medium-device-1), (max-height: $height-medium-device-1) {
+        font-size: 40px;
+      }
+    }
+  }
+}

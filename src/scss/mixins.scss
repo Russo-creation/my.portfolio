@@ -1,0 +1,25 @@
+@mixin textRedShadow() {
+	text-shadow: 0px 0px 4px $red-cyberpunk;
+	color: $red-cyberpunk;
+}
+
+@mixin textWhiteShadow() {
+	text-shadow: 0px 0px 4px $white-cyberpunk;
+	color: $white-cyberpunk;
+}
+
+@mixin boxShadowRedOutsetInset() {
+	box-shadow: 0px 0px 3px 0px $red-cyberpunk, inset 0px 0px 3px 0px $red-cyberpunk;
+}
+
+@mixin boxShadowWhiteOutsetInset() {
+	box-shadow: 0px 0px 3px 0px $white-cyberpunk, inset 0px 0px 3px 0px $white-cyberpunk;
+}
+
+@mixin boxShadowGray() {
+	box-shadow: 0px 0px 3px 0px $gray-cyberpunk;
+}
+
+@mixin boxRedShadow() {
+	box-shadow: 0px 0px 4px $red-cyberpunk;
+}

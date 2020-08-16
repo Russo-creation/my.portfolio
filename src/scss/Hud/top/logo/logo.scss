@@ -1,0 +1,35 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+#logoCage {
+	position: fixed;
+	top: 17px;
+	left: 17px;
+
+	#logoText {
+		margin-left: 12px;
+		font-size: 17px;
+		transform: scale(1, 1.15);
+		letter-spacing: 2px;
+		@include textRedShadow;
+
+		@media screen and (max-width: $width-medium-device-1), (max-height: $height-medium-device-1) {
+			font-size: 15px;
+			margin-left: 10px;
+		}
+
+		@media screen and (max-width: $width-small-device-1), (max-height: $height-medium-device-1) {
+			margin-left: 6px;
+		}
+	}
+
+	div {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	@media screen and (max-width: $width-medium-device-1), (max-height: $height-medium-device-1) {
+		top: 10px;
+		left: 10px;
+	}
+}

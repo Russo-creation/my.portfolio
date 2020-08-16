@@ -1,0 +1,100 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+nav {
+	text-transform: uppercase;
+	position: fixed;
+	top: 17px;
+	right: 17px;
+
+	z-index: 1;
+
+	-webkit-user-select: none; /* Chrome all / Safari all */
+	-moz-user-select: none; /* Firefox all */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none;
+
+	div {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	@media screen and (max-width: $width-medium-device-1), (max-height: $height-medium-device-1) {
+		top: 10px;
+		right: 10px;
+	}
+}
+
+.buttonsLine {
+	margin-top: 12px;
+
+	.buttonCage {
+		box-sizing: border-box;
+		border: 1px solid $white-cyberpunk;
+		@include textWhiteShadow;
+		@include boxShadowWhiteOutsetInset;
+
+		height: 50px;
+		min-width: 110px;
+		padding: 5px;
+		cursor: pointer;
+		position: relative;
+		margin-right: 12px;
+
+		transition: 0.3s;
+
+		div {
+			display: block;
+
+			font-size: 12px;
+			letter-spacing: 1px;
+			margin: 0;
+			padding: 0;
+			line-height: 12px;
+
+			@media screen and (max-width: $width-medium-device-1), (max-height: $height-medium-device-1) {
+				font-size: 10px;
+			}
+		}
+
+		.buttonDescribe {
+			position: absolute;
+			bottom: 5px;
+
+			@media screen and (max-width: $width-medium-device-1), (max-height: $height-medium-device-1) {
+				bottom: 4px;
+			}
+		}
+
+		&:hover {
+			text-shadow: none;
+			box-shadow: none;
+		}
+
+		@media screen and (max-width: $width-medium-device-1), (max-height: $height-medium-device-1) {
+			min-width: 90px;
+			height: 40px;
+			margin-right: 10px;
+			padding: 4px;
+		}
+
+		@media screen and (max-width: $width-small-device-1), (max-height: $height-medium-device-1) {
+			min-width: 80px;
+			margin-right: 6px;
+		}
+	}
+
+	.selectedButton {
+		border: 1px solid #ec004d;
+		@include textRedShadow;
+		@include boxShadowRedOutsetInset;
+	}
+}
+
+.shortMenu {
+	float: right;
+	margin-top: 20px;
+	display: block;
+	clear: both;
+	margin-right: 4px;
+}

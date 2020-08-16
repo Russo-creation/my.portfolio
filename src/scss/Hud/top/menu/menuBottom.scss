@@ -1,0 +1,50 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+.menuChooseCage {
+	margin-top: 10px;
+	width: calc(100% - 16px);
+
+	display: block;
+
+	.titleClose {
+		margin-top: 10px;
+		width: 100%;
+		font-size: 14px;
+		letter-spacing: 1px;
+		@include textWhiteShadow;
+
+		#close {
+			float: right;
+			cursor: pointer;
+			padding-left: 10px;
+			transition: 0.3s;
+
+			svg {
+				margin-bottom: 3px;
+				display: inline-block;
+				vertical-align: middle;
+				transition: 0.3s;
+				fill: $white-cyberpunk;
+				filter: drop-shadow(0px 0px 4px $white-cyberpunk);
+			}
+
+			&:hover {
+				text-shadow: none;
+
+				svg {
+					filter: none;
+				}
+			}
+		}
+	}
+
+	#titleLine {
+		height: 1px;
+		background-color: $gray-cyberpunk;
+		width: 100%;
+		clear: both;
+
+		@include boxShadowGray;
+	}
+}

@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+#three-render-cage {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: -1;
+}
+
+#three-noise-texture {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: -1;
+
+	background: radial-gradient(circle, transparent 60%, black 150%);
+}

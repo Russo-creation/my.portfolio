@@ -1,0 +1,93 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.HudScrollTrackerCage {
+	position: fixed;
+	z-index: 1;
+	box-sizing: border-box;
+	bottom: 9px;
+
+	width: 1021px;
+	height: 7px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	#ScrollBottomLine {
+		clear: both;
+		height: 1px;
+		width: 100%;
+		background-color: #7d8184;
+		box-shadow: 0px 0px 5px 1px #7d8184;
+	}
+
+	#ScrollLeftLine {
+		float: left;
+		height: 7px;
+		background-color: #7d8184;
+		box-shadow: 0px 0px 5px 1px #7d8184;
+		width: 1px;
+	}
+
+	#ScrollRightLine {
+		float: right;
+		height: 7px;
+		background-color: #7d8184;
+		box-shadow: 0px 0px 5px 1px #7d8184;
+		width: 1px;
+	}
+
+	#scrollTrackCage {
+		position: absolute;
+		left: 2px;
+		right: 2px;
+		bottom: 1px;
+
+		.ScrollButton {
+			width: calc(25% - 3px);
+			display: inline-block;
+			cursor: pointer;
+
+			&:nth-child(2) {
+				margin-left: 4px;
+				margin-right: 2px;
+			}
+
+			&:nth-child(3) {
+				margin-left: 2px;
+				margin-right: 4px;
+			}
+
+			.ScrollText {
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+
+				text-transform: uppercase;
+				font-size: 10px;
+				letter-spacing: 2px;
+				margin-bottom: 3px;
+				@include textWhiteShadow;
+				transition: color 0.3s ease, text-shadow 0.3s ease;
+			}
+
+			.ScrollBcg {
+				height: 6px;
+				transition: background-color 0.3s ease, box-shadow 0.3s ease;
+			}
+
+			.ScrollTextActive {
+				@include textRedShadow;
+			}
+
+			.ScrollBcgActive {
+				@include boxRedShadow;
+				background-color: $red-cyberpunk;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1061px), (max-height: $height-medium-device-1) {
+		width: calc(100% - 20px);
+	}
+}

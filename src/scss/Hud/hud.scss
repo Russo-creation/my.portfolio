@@ -1,0 +1,12 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.cyberOrnament {
+	width: 4px;
+	height: 50px;
+	background-color: $white-cyberpunk;
+
+	@media screen and (max-width: $width-medium-device-1), (max-height: $height-medium-device-1) {
+		height: 40px;
+	}
+}

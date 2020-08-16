@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="24px" height="24px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 24 24"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:0.566934}
+    .str1 {stroke:black;stroke-width:0.566934}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Warstwa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0 str0" cx="12" cy="12" r="11"/>
+  <g id="_1685201935376">
+   <line class="fil0 str1" x1="1" y1="12" x2="23" y2= "12" />
+  </g>
+  <g id="_1685201949552">
+   <line class="fil0 str1" x1="2" y1="7" x2="22" y2= "7" />
+  </g>
+  <g id="_1685201948400">
+   <line class="fil0 str1" x1="22" y1="17" x2="2" y2= "17" />
+  </g>
+  <ellipse class="fil0 str0" cx="12" cy="12" rx="5" ry="11"/>
+ </g>
+</svg>
