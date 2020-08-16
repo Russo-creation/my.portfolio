@@ -102,7 +102,6 @@ class Three_initial extends Component {
     this.camera.position.z = 10;
 
     this.renderer = new THREE.WebGLRenderer({
-      antialias: true,
       preserveDrawingBuffer: false,
     });
     this.renderer.setPixelRatio(window.devicePixelRatio);
@@ -208,7 +207,7 @@ class Three_initial extends Component {
     this.bloomLayer.set(this.BLOOM_ON);
 
     //leave the variables (none effect)
-    this.bloomPass = new UnrealBloomPass(new THREE.Vector2(600, 600), 1, 1, 1);
+    this.bloomPass = new UnrealBloomPass(new THREE.Vector2(400, 400), 1, 1, 1);
 
     //edit variables to change effect
 
@@ -252,7 +251,7 @@ class Three_initial extends Component {
     this.fxaaPass.material.uniforms["resolution"].value.y =
       1 / (height * pixelRatio);
 
-    this.finalComposer.addPass(this.fxaaPass);
+    //this.finalComposer.addPass(this.fxaaPass);
 
     //////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////Depth Of field- Bokeh
@@ -264,8 +263,8 @@ class Three_initial extends Component {
       aperture: 1,
       maxblur: 1,
 
-      width: 600,
-      height: 600,
+      width: 400,
+      height: 400,
     });
 
     this.composer3 = new EffectComposer(this.renderer);
