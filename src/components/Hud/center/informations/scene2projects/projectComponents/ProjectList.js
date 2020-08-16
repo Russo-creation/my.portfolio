@@ -1,3 +1,4 @@
+import qrMyPortfolio from "../../../../../../images/projects/qrMyPortfolio.png";
 import qrInvidia from "../../../../../../images/projects/qrInvidia.png";
 import qr3d_scans from "../../../../../../images/projects/qr3d_scans.png";
 import qrSimpleHdViewer from "../../../../../../images/projects/qrSimple_hd_viewer.png";
@@ -43,8 +44,8 @@ const ProjectList = [
       },
     ],
 
-    addres: "www.github.com",
-    qr: qrInvidia,
+    addres: "russo-creation.github.io/my.portfolio",
+    qr: qrMyPortfolio,
     image: imageMyportolio,
     technology: [
       "react + redux",
@@ -67,7 +68,7 @@ const ProjectList = [
           "strona wykonana i zaprojektowana w całości przeze mnie. Głównym założeniem było przedstawienie możliwości sceny 3D przy użyciu silnika czasu rzeczywistego korzystając z biblioteki three.js prezentowanej w przeglądarce internetowej.",
       },
     ],
-    intresting: [],
+    intresting: ["github.com/Russo-creation/my.portfolio"],
   },
   //////////////////////-------------------------Invidia
   {
