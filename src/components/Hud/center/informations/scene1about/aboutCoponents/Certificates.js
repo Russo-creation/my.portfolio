@@ -13,6 +13,7 @@ import phpCMS_30_01_2020 from "../../../../../../documents/php CMS.pdf";
 import phpOOP_02_02_2020 from "../../../../../../documents/php OOP.pdf";
 import nodejs_14_02_2020 from "../../../../../../documents/node mongodb.pdf";
 import php74_06_08_2020 from "../../../../../../documents/php 74.pdf";
+import react_19_08_2020 from "../../../../../../documents/react midd.pdf";
 
 const certificateList = [
   {
@@ -61,6 +62,12 @@ const certificateList = [
     name: "php",
     date: "06.08.2020",
     certyficate: php74_06_08_2020,
+    icon: <DiPhp />,
+  },
+  {
+    name: "react",
+    date: "19.08.2020",
+    certyficate: react_19_08_2020,
     icon: <DiPhp />,
   },
 ];
