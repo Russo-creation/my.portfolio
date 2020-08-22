@@ -8,3 +8,4 @@ export const LoadingSceneProgress = "LoadingSceneProgress";
 export const LoadingSceneFinished = "LoadingSceneFinished";
 export const ScrollActualScene = "ScrollActualScene";
 export const QualityChangeNotification = "QualityChangeNotification";
+export const QualityDetect = "QualityDetect";

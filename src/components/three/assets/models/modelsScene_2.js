@@ -5,7 +5,7 @@ import materialsScene_2 from "../materials/materialsScene_2";
 
 import removeCameraObj from "./removeCameraObj";
 
-import { Reflector } from "three/examples/jsm/objects/Reflector.js";
+import createMirror from "./createMirror";
 
 //const BLOOM_OFF = 0;
 const BLOOM_ON = 1;
@@ -64,42 +64,9 @@ const modelsScene_2 = (
             name: child.name,
           });
         } else if (name === "mirror") {
-          const heightMirror =
-            Math.abs(child.geometry.boundingBox.max.y) +
-            Math.abs(child.geometry.boundingBox.min.y);
-          const widthMirror = Math.abs(
-            Math.abs(child.geometry.boundingBox.max.z) +
-              Math.abs(child.geometry.boundingBox.min.z)
-          );
-
-          var geometry = new THREE.PlaneBufferGeometry(
-            widthMirror,
-            heightMirror
-          );
-
-          var verticalMirror = new Reflector(geometry, {
-            textureWidth: 1500,
-            textureHeight: 1500,
-            color: 0x707070,
-          });
-
-          assets_names["scene2"].push(verticalMirror.uuid);
-
-          verticalMirror.rotation.y = Math.PI * -0.5;
-
-          verticalMirror.position.x = child.geometry.boundingBox.min.x;
-          verticalMirror.position.y =
-            heightMirror / 2 + child.geometry.boundingBox.min.y;
-
-          verticalMirror.position.z =
-            widthMirror / 2 + child.geometry.boundingBox.min.z;
-
-          verticalMirror.layers.enable(BLOOM_ON);
-          verticalMirror.renderOrder = Infinity; // FIX
-
           child.visible = false;
 
-          scene.add(verticalMirror);
+          scene.add(createMirror(child, assets_names));
         }
 
         if (!name.startsWith("camera_") && name !== "mirror") {

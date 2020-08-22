@@ -30,7 +30,7 @@ const Profile = (props) => {
           visualization, database, frontend and backend.`
           : null}
         {props.languageSet === "pl"
-          ? "PROGRAMOWANIA ZACZĘŁEM SIĘ uczyć W 2014 ROKU. na początku programowałem w JAVIE, A NASTĘPNIE przestawiłem się NA TECHNOLOGIE INTERNETOWE. ZREALIZOWAŁEM kilka zleceń FREELANcerskich, ALE GŁÓWNIE rozwijałem mój PROJEKT INVIDIA - OKULARY DRUKOWANE W 3D, KTÓRE TWORZĘ. WSZYSTKIE MOJE PROJEKTY WYKONywałem dotąd sam- KONCEPCJA, PROJEKT, GRAFIKA, WIZUALIZACJA, BAZA DANYCH, frontend I BACKEND."
+          ? "PROGRAMOWANIA ZACZĄŁEM SIĘ uczyć W 2014 ROKU. na początku programowałem w JAVIE, A NASTĘPNIE przestawiłem się NA TECHNOLOGIE INTERNETOWE. ZREALIZOWAŁEM kilka zleceń FREELANcerskich, ALE GŁÓWNIE rozwijałem mój PROJEKT INVIDIA - OKULARY DRUKOWANE W 3D, KTÓRE TWORZĘ. WSZYSTKIE MOJE PROJEKTY WYKONywałem dotąd sam- KONCEPCJA, PROJEKT, GRAFIKA, WIZUALIZACJA, BAZA DANYCH, frontend I BACKEND."
           : null}
       </div>
     </div>

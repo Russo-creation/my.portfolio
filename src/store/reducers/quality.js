@@ -1,7 +1,8 @@
 import * as actionTypes from "../actions";
+import { isMobile, browserName } from "react-device-detect";
 
 const intialState = {
-  qualitySet: 1,
+  qualitySet: 0,
   qualityChange: false,
   qualityList: [
     {
@@ -31,6 +32,16 @@ const intialState = {
 
 const reducer = (state = intialState, action) => {
   switch (action.type) {
+    case actionTypes.QualityDetect:
+      if (!isMobile && browserName === "Chrome") {
+        return {
+          ...state,
+          qualitySet: 1,
+        };
+      } else {
+        return state;
+      }
+
     case actionTypes.QualityChange:
       if (state.qualitySet !== action.quality) {
         return {

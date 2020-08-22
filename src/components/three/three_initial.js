@@ -11,6 +11,8 @@ import zipfile from "../../models/3d_assets.zip";
 import addCustomSceneObjects from "./import_assets.js";
 import humanStandCurve from "./curves/humanStand";
 
+import createMirror from "./assets/models/createMirror";
+
 import {
   carViewSide,
   carViewBack,
@@ -76,9 +78,13 @@ class Three_initial extends Component {
     this.carViewTime = { time: 0, lap: 0 };
 
     this.mirrorSubjects = [];
+
+    this.LimiterDt = 1000 / 75;
+    this.timeTarget = 0;
   }
 
   componentDidMount() {
+    this.props.onQalityDetect();
     this.mount.style.opacity = 1;
     this.sceneSetup();
     this.startAnimationLoop();
@@ -323,6 +329,11 @@ class Three_initial extends Component {
       this.bezierTime = 0.0001; //scene 1 angle
       this.bezierTime2 = 0.0001; //scene 2 angle
       this.carViewTime.time = 0; // scene 3 car
+
+      if (this.props.quality === 0) {
+        this.rain.visible = false;
+        this.flash.power = 300;
+      }
     } else if (this.props.actualScene === 1) {
       this.hideSceneModels(this.scene, this.assets_names, "scene1", false);
       this.hideSceneModels(this.scene, this.assets_names, "scene2", true);
@@ -385,6 +396,22 @@ class Three_initial extends Component {
       );
     }
 
+    if (this.props.actualScene === 1 || this.props.actualScene === 2) {
+      if (this.props.quality === 0) {
+        let obj = this.scene.getObjectByName("mirrorReflection");
+        if (obj) {
+          this.scene.remove(obj);
+
+          for (let i = 0; i < this.assets_names["scene2"].length; i++) {
+            if (obj.uuid === this.assets_names["scene2"][i]) {
+              this.assets_names["scene2"].splice(i, 1);
+              break;
+            }
+          }
+        }
+      }
+    }
+
     this.previousScene = this.props.actualScene;
 
     this.camera.updateProjectionMatrix();
@@ -393,7 +420,9 @@ class Three_initial extends Component {
   hideSceneModels = (scene, assets_names, sceneName, hideBool) => {
     for (let i = 0; i < assets_names[sceneName].length; i++) {
       let obj = scene.getObjectByProperty("uuid", assets_names[sceneName][i]);
-      obj.visible = hideBool;
+      if (obj) {
+        obj.visible = hideBool;
+      }
     }
   };
 
@@ -457,7 +486,22 @@ class Three_initial extends Component {
         this.flash.decay = 2;
 
         this.cloudParticles[0].material.color.setHex(0x00c6ff);
-        let obj = this.scene.getObjectByName("recrute_text");
+
+        this.rain.visible = false;
+        this.flash.power = 300;
+        let obj = this.scene.getObjectByName("mirrorReflection");
+        if (obj) {
+          this.scene.remove(obj);
+
+          for (let i = 0; i < this.assets_names["scene2"].length; i++) {
+            if (obj.uuid === this.assets_names["scene2"][i]) {
+              this.assets_names["scene2"].splice(i, 1);
+              break;
+            }
+          }
+        }
+
+        obj = this.scene.getObjectByName("recrute_text");
         obj.material.color.setHex(0xe00049);
         obj.material.emissive.setHex(0xca0041);
         obj.material.opacity = 1;
@@ -545,7 +589,22 @@ class Three_initial extends Component {
 
         this.cloudParticles[0].material.color.setHex(0x004851);
 
-        let obj = this.scene.getObjectByName("recrute_text");
+        let obj = this.scene.getObjectByName("mirrorReflection");
+        if (!obj) {
+          obj = this.scene.getObjectByName("mirror");
+          this.scene.add(createMirror(obj, this.assets_names));
+        }
+        if (this.props.actualScene === 0) {
+          this.rain.visible = true;
+        } else if (
+          this.props.actualScene === 2 ||
+          this.props.actualScene === 3
+        ) {
+          obj = this.scene.getObjectByName("mirrorReflection");
+          obj.visible = true;
+        }
+
+        obj = this.scene.getObjectByName("recrute_text");
         obj.material.color.setHex(0x770027);
         obj.material.emissive.setHex(0x7c0028);
         obj.material.opacity = 1.5;
@@ -672,56 +731,67 @@ class Three_initial extends Component {
 
   startAnimationLoop = () => {
     if (this.props.loadingFnished) {
-      this.changingScenes(); // detecting and fading systems
+      if (Date.now() >= this.timeTarget) {
+        // frame limiting
+        this.changingScenes(); // detecting and fading systems
 
-      this.delta = this.clock.getDelta();
-      if (this.mixer[0]) {
-        this.mixer[0].update(this.delta);
+        this.delta = this.clock.getDelta();
+        if (this.mixer[0]) {
+          this.mixer[0].update(this.delta);
+        }
+
+        const {
+          scene,
+          camera,
+          delta,
+          flash,
+          rain,
+          rainGeo,
+          cloudParticles,
+          trainGroup,
+          trainFinished,
+          carsGroup,
+          tubeGeometry,
+        } = this;
+
+        if (this.props.actualScene === 0) {
+          if (this.props.quality !== 0) {
+            animationSky(delta, flash, rain, rainGeo, cloudParticles);
+          }
+
+          this.trainFinished = trainAnimation(scene, trainGroup, trainFinished);
+          carAnimation(scene, carsGroup);
+          cameraMoveHuman(camera, tubeGeometry, this.cameraMoveVector);
+        } else if (this.props.actualScene === 1) {
+          this.calcBezierCurveAtScene1(); // curve scene 1 angle to straith mirror
+          this.scene1profileCertSkills(); //fading opacity of mirror text profile cert skills
+          cameraMoveHuman(camera, tubeGeometry, this.cameraMoveVector);
+        } else if (this.props.actualScene === 2) {
+          this.calcBezierCurveAtScene2(); // curve scene 1 angle to straith mirror
+          cameraMoveHuman(camera, tubeGeometry, this.cameraMoveVector);
+        } else if (this.props.actualScene === 3) {
+          this.scene3CarCameraAnimations(camera); //camera fading/moving/look and time/lap calcs
+        }
+
+        // calc animation from existing cam point to destiny scroll percentage
+        this.cameraOrientation = cameraAnimateLookAt(
+          camera,
+          this.props.scrollTrackPercentage,
+          this.props.scrollTrackSet,
+          this.props.actualScene,
+          this.cameraOrientation,
+          this.cameraPoints,
+          this.carViewTime
+        );
+        this.calcFocus(camera); //get distance from camera to lookat point
+
+        this.animationQuality(this.props.quality);
+
+        this.timeTarget += this.LimiterDt; //limit fps
+        if (Date.now() >= this.timeTarget) {
+          this.timeTarget = Date.now();
+        }
       }
-
-      const {
-        scene,
-        camera,
-        delta,
-        flash,
-        rain,
-        rainGeo,
-        cloudParticles,
-        trainGroup,
-        trainFinished,
-        carsGroup,
-        tubeGeometry,
-      } = this;
-
-      if (this.props.actualScene === 0) {
-        animationSky(delta, flash, rain, rainGeo, cloudParticles);
-        this.trainFinished = trainAnimation(scene, trainGroup, trainFinished);
-        carAnimation(scene, carsGroup);
-        cameraMoveHuman(camera, tubeGeometry, this.cameraMoveVector);
-      } else if (this.props.actualScene === 1) {
-        this.calcBezierCurveAtScene1(); // curve scene 1 angle to straith mirror
-        this.scene1profileCertSkills(); //fading opacity of mirror text profile cert skills
-        cameraMoveHuman(camera, tubeGeometry, this.cameraMoveVector);
-      } else if (this.props.actualScene === 2) {
-        this.calcBezierCurveAtScene2(); // curve scene 1 angle to straith mirror
-        cameraMoveHuman(camera, tubeGeometry, this.cameraMoveVector);
-      } else if (this.props.actualScene === 3) {
-        this.scene3CarCameraAnimations(camera); //camera fading/moving/look and time/lap calcs
-      }
-
-      // calc animation from existing cam point to destiny scroll percentage
-      this.cameraOrientation = cameraAnimateLookAt(
-        camera,
-        this.props.scrollTrackPercentage,
-        this.props.scrollTrackSet,
-        this.props.actualScene,
-        this.cameraOrientation,
-        this.cameraPoints,
-        this.carViewTime
-      );
-      this.calcFocus(camera); //get distance from camera to lookat point
-
-      this.animationQuality(this.props.quality);
     } else {
       window.scrollTo(0, 0);
 
@@ -748,6 +818,7 @@ class Three_initial extends Component {
     ); */
 
     this.requestID = window.requestAnimationFrame(this.startAnimationLoop);
+
     this.props.onFpsUpdate();
   };
 
@@ -958,6 +1029,8 @@ const mapDispatchToProps = (dispatch) => {
 
     onQalitySceneSwitch: () =>
       dispatch({ type: actionTypes.QualityChangeNotification }),
+
+    onQalityDetect: () => dispatch({ type: actionTypes.QualityDetect }),
   };
 };
 

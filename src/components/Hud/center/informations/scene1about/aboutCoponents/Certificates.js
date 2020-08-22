@@ -68,7 +68,7 @@ const certificateList = [
     name: "react",
     date: "19.08.2020",
     certyficate: react_19_08_2020,
-    icon: <DiPhp />,
+    icon: <FaReact />,
   },
 ];
 
