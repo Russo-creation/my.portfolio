@@ -593,12 +593,15 @@ class Three_initial extends Component {
         if (!obj) {
           obj = this.scene.getObjectByName("mirror");
           this.scene.add(createMirror(obj, this.assets_names));
+
+          obj = this.scene.getObjectByName("mirrorReflection");
+          obj.visible = false;
         }
         if (this.props.actualScene === 0) {
           this.rain.visible = true;
         } else if (
-          this.props.actualScene === 2 ||
-          this.props.actualScene === 3
+          this.props.actualScene === 1 ||
+          this.props.actualScene === 2
         ) {
           obj = this.scene.getObjectByName("mirrorReflection");
           obj.visible = true;
