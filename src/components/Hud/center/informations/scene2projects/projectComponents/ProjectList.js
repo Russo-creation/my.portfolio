@@ -70,6 +70,85 @@ const ProjectList = [
     ],
     intresting: ["github.com/Russo-creation/my.portfolio"],
   },
+  //////////////////////-------------------------simple viewer
+  {
+    tittle: [
+      {
+        lang: "pl",
+        value: "simple hd 3d viewer",
+      },
+      {
+        lang: "en",
+        value: "simple hd 3d viewer",
+      },
+    ],
+
+    addres: "russo-creation.github.io/simple_hd_viewer",
+    qr: qrSimpleHdViewer,
+    image: imageSimpleHdViewer,
+    technology: [
+      "react",
+      "three.js",
+      "three fiber",
+      "sass",
+      "html",
+      "blender",
+      "substance",
+      "photoshop",
+    ],
+    description: [
+      {
+        lang: "en",
+        value:
+          "Simple 3D scene inspired by 'The last of us' game prepared to check React three fiber possibilities",
+      },
+      {
+        lang: "pl",
+        value:
+          "Prosta przeglądarkowe scena 3D inspirowana grą „The last od us” stworzona, aby móc przetestować możliwości biblioteki React three fiber",
+      },
+    ],
+    intresting: ["github.com/Russo-creation/simple_hd_viewer"],
+  },
+  //////////////////////-------------------------3d scanned face
+  {
+    tittle: [
+      {
+        lang: "pl",
+        value: "3d eyewear fitting",
+      },
+      {
+        lang: "en",
+        value: "3d eyewear fitting",
+      },
+    ],
+
+    addres: "www.invidiaeyewear.com/3d_scans",
+    qr: qr3d_scans,
+    image: image3d_scans,
+    technology: [
+      "jquery",
+      "javascript",
+      "three.js",
+      "css3",
+      "html",
+      "blender",
+      "photoshop",
+    ],
+    description: [
+      {
+        lang: "en",
+        value:
+          "Prototype of an application for eyewear fitting using 3D face scans created for my own needs.",
+      },
+      {
+        lang: "pl",
+        value:
+          "Prototyp projektu używania skanów 3d twarzy do dopasowywania okularów stworzony na własne potrzeby.",
+      },
+    ],
+    intresting: [],
+  },
   //////////////////////-------------------------Invidia
   {
     tittle: [
@@ -114,86 +193,7 @@ const ProjectList = [
       "www.invidiaeyewear.com/cyberpunk_steampunk.php",
     ],
   },
-
-  //////////////////////-------------------------3d scanned face
-  {
-    tittle: [
-      {
-        lang: "pl",
-        value: "3d eyewear fitting",
-      },
-      {
-        lang: "en",
-        value: "3d eyewear fitting",
-      },
-    ],
-
-    addres: "www.invidiaeyewear.com/3d_scans",
-    qr: qr3d_scans,
-    image: image3d_scans,
-    technology: [
-      "jquery",
-      "javascript",
-      "three.js",
-      "css3",
-      "html",
-      "blender",
-      "photoshop",
-    ],
-    description: [
-      {
-        lang: "en",
-        value:
-          "Prototype of an application for eyewear fitting using 3D face scans created for my own needs.",
-      },
-      {
-        lang: "pl",
-        value:
-          "Prototyp projektu używania skanów 3d twarzy do dopasowywania okularów stworzony na własne potrzeby.",
-      },
-    ],
-    intresting: [],
-  },
-  //////////////////////-------------------------simlpe viewr (not ready)
-  {
-    tittle: [
-      {
-        lang: "pl",
-        value: "simple hd 3d viewer",
-      },
-      {
-        lang: "en",
-        value: "simple hd 3d viewer",
-      },
-    ],
-
-    addres: "russo-creation.github.io/simple_hd_viewer",
-    qr: qrSimpleHdViewer,
-    image: imageSimpleHdViewer,
-    technology: [
-      "react",
-      "three.js",
-      "three fiber",
-      "sass",
-      "html",
-      "blender",
-      "substance",
-      "photoshop",
-    ],
-    description: [
-      {
-        lang: "en",
-        value:
-          "Simple 3D scene inspired by 'The last of us' game prepared to check React three fiber possibilities",
-      },
-      {
-        lang: "pl",
-        value:
-          "Prosta przeglądarkowe scena 3D inspirowana grą „The last od us” stworzona, aby móc przetestować możliwości biblioteki React three fiber",
-      },
-    ],
-    intresting: ["github.com/Russo-creation/simple_hd_viewer"],
-  },
+  
   //////////////////////-------------------------detall sell site
   {
     tittle: [

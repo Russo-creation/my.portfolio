@@ -2,27 +2,27 @@ import React from "react";
 import { connect } from "react-redux";
 import "../../../../../scss/Hud/center/information/scene0start/start.scss";
 
-const StartInfo = (props) => {
+const StartInfo = ({ languageSet, scrollDownInfo }) => {
   return (
     <div>
       <div id="startCenteredText">
         <div>
-          {props.languageSet === "en" ? "Welcome to my portfolio" : null}
-          {props.languageSet === "pl" ? "Witaj na moim portfolio" : null}
+          {languageSet === "en" ? "Welcome to my portfolio" : null}
+          {languageSet === "pl" ? "Witaj na moim portfolio" : null}
         </div>
         <div>
-          {props.languageSet === "en"
+          {languageSet === "en"
             ? "Choose proper quality for best performance"
             : null}
-          {props.languageSet === "pl"
+          {languageSet === "pl"
             ? "wybierz jakość grafiki dla najlepszej wydajności"
             : null}
         </div>
       </div>
-      {props.scrollDownInfo ? (
+      {scrollDownInfo ? (
         <div id="downTextScroll">
-          {props.languageSet === "en" ? "SCROLL TO DISCOVER" : null}
-          {props.languageSet === "pl" ? "SCROLLUJ BY ZOBACZYĆ ZAWARTOŚĆ" : null}
+          {languageSet === "en" ? "SCROLL TO DISCOVER" : null}
+          {languageSet === "pl" ? "SCROLLUJ BY ZOBACZYĆ ZAWARTOŚĆ" : null}
         </div>
       ) : null}
     </div>

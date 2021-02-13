@@ -93,7 +93,7 @@ class AboutInfo extends Component {
               ...(profileDisplay() ? { opacity: 0 } : {}),
               height: "100%",
             }}
-            to={{ opacity: profileDisplay() ? 1 : 0, height: "100%" }}
+            to={{ opacity: profileDisplay() ? 1 : 0, height: "100%", cursor: profileDisplay() ? 'auto' : 'default' }}
             config={{ duration: 600 }}
             {...(profileDisplay() ? { delay: 200 } : { delay: 0 })}
           >
@@ -122,7 +122,7 @@ class AboutInfo extends Component {
         ) : null}
         {certificateDisplay() ? (
           <Spring
-            from={{ opacity: 0, height: "100%" }}
+            from={{ opacity: 0, height: "100%"}}
             to={{ opacity: 1, height: "100%" }}
             config={{ duration: 600 }}
             delay={200}
@@ -159,7 +159,7 @@ class AboutInfo extends Component {
               ...(skillDisplay() ? { opacity: 0 } : {}),
               height: "100%",
             }}
-            to={{ opacity: skillDisplay() ? 1 : 0, height: "100%" }}
+            to={{ opacity: skillDisplay() ? 1 : 0, height: "100%", cursor: skillDisplay() ? 'auto' : 'default' }}
             config={{ duration: 600 }}
             {...(skillDisplay() ? { delay: 200 } : { delay: 0 })}
           >

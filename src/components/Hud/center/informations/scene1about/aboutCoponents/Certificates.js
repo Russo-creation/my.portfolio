@@ -14,6 +14,7 @@ import phpOOP_02_02_2020 from "../../../../../../documents/php OOP.pdf";
 import nodejs_14_02_2020 from "../../../../../../documents/node mongodb.pdf";
 import php74_06_08_2020 from "../../../../../../documents/php 74.pdf";
 import react_19_08_2020 from "../../../../../../documents/react midd.pdf";
+import react_native_03_10_2020 from "../../../../../../documents/react native complete guide.pdf";
 
 const certificateList = [
   {
@@ -70,6 +71,15 @@ const certificateList = [
     certyficate: react_19_08_2020,
     icon: <FaReact />,
   },
+  {
+    name: "react native",
+    date: "03.10.2020",
+    certyficate: react_native_03_10_2020,
+    icon: <FaReact />,
+  },
+
+
+  
 ];
 
 const Certificates = (props) => {

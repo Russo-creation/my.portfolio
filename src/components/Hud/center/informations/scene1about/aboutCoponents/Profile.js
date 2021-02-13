@@ -24,13 +24,12 @@ const Profile = (props) => {
       </div>
       <div className="profileText">
         {props.languageSet === "en"
-          ? `I started to learn programming in 2014. First work in Java, then switched to web technologies. 
-          I’ve done couple freelance projects, but mainly work for my INVIDIA project-
-          3D printed eyewear which I create. In all my projects I made all things by myself – concept, design, graphics, 
-          visualization, database, frontend and backend.`
+          ? `I'am programming since 2014. First I was coding in Java, then I decided to focus on web technologies. 
+          I’ve done couple freelance projects, but mainly I was deeply involved in my own project INVIDIA-
+          3D printed eyewear which I'm designing and creating. All my projects was created by myself from A to Z – concept, design, graphics, visualization, database, frontend and backend.`
           : null}
         {props.languageSet === "pl"
-          ? "PROGRAMOWANIA ZACZĄŁEM SIĘ uczyć W 2014 ROKU. na początku programowałem w JAVIE, A NASTĘPNIE przestawiłem się NA TECHNOLOGIE INTERNETOWE. ZREALIZOWAŁEM kilka zleceń FREELANcerskich, ALE GŁÓWNIE rozwijałem mój PROJEKT INVIDIA - OKULARY DRUKOWANE W 3D, KTÓRE TWORZĘ. WSZYSTKIE MOJE PROJEKTY WYKONywałem dotąd sam- KONCEPCJA, PROJEKT, GRAFIKA, WIZUALIZACJA, BAZA DANYCH, frontend I BACKEND."
+          ? "Programuję od 2014 ROKU. na początku programowałem w JAVIE, A NASTĘPNIE przestawiłem się NA TECHNOLOGIE INTERNETOWE. ZREALIZOWAŁEM kilka zleceń FREELANcerskich, ALE GŁÓWNIE rozwijałem mój PROJEKT INVIDIA - OKULARY DRUKOWANE W 3D, KTÓRE TWORZĘ. WSZYSTKIE MOJE PROJEKTY WYKONywałem dotąd sam- KONCEPCJA, PROJEKT, GRAFIKA, WIZUALIZACJA, BAZA DANYCH, frontend I BACKEND."
           : null}
       </div>
     </div>

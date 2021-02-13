@@ -3,7 +3,7 @@ import "../scss/style.scss";
 
 import Hud from "../components/Hud/Hud";
 import ThreeInitial from "../components/three/three_initial";
-import Informations from "../components/Hud/center/informations/Informations";
+import Content from "../components/Hud/center/informations/content";
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
         <ThreeInitial />
         <div id="three-noise-texture"></div>
         <div>
-          <Informations scrollTrackerList={this.scrollTrackerList} />
+          <Content scrollTrackerList={this.scrollTrackerList} />
         </div>
       </div>
     );
