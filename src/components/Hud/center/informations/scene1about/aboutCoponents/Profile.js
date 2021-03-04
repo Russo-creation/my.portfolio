@@ -24,9 +24,7 @@ const Profile = (props) => {
       </div>
       <div className="profileText">
         {props.languageSet === "en"
-          ? `I'am programming since 2014. First I was coding in Java, then I decided to focus on web technologies. 
-          I’ve done couple freelance projects, but mainly I was deeply involved in my own project INVIDIA-
-          3D printed eyewear which I'm designing and creating. All my projects was created by myself from A to Z – concept, design, graphics, visualization, database, frontend and backend.`
+          ? `I have been PROGRAMMING SINCE 2014. FIRST I WAS CODING IN JAVA, THEN I DECIDED TO FOCUS ON WEB TECHNOLOGIES. I’VE DONE a few FREELANCE PROJECTS, BUT MAINLY I WAS DEEPLY INVOLVED IN MY OWN PROJECT INVIDIA- 3D PRINTED EYEWEAR WHICH I'M DESIGNING AND producing. ALL MY PROJECTS were CREATED BY MYSELF FROM the beginning to end – CONCEPT, DESIGN, GRAPHICS, VISUALIZATION, DATABASE, FRONTEND AND BACKEND.`
           : null}
         {props.languageSet === "pl"
           ? "Programuję od 2014 ROKU. na początku programowałem w JAVIE, A NASTĘPNIE przestawiłem się NA TECHNOLOGIE INTERNETOWE. ZREALIZOWAŁEM kilka zleceń FREELANcerskich, ALE GŁÓWNIE rozwijałem mój PROJEKT INVIDIA - OKULARY DRUKOWANE W 3D, KTÓRE TWORZĘ. WSZYSTKIE MOJE PROJEKTY WYKONywałem dotąd sam- KONCEPCJA, PROJEKT, GRAFIKA, WIZUALIZACJA, BAZA DANYCH, frontend I BACKEND."

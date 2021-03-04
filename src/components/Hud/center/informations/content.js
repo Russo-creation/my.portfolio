@@ -27,7 +27,6 @@ const Content = ({
   const animationScene0 = useSpring({
     from: { opacity: 0 },
     to: async (next, cancel) => {
-      //await next({ opacity: 1 });
       setInitialDelayOnScene0(false);
       if (scrollTrackPercentage <= 20) {
         setVisibleScene0(true);
@@ -35,6 +34,7 @@ const Content = ({
       } else {
         await next({ opacity: 0, config: { duration: 1000 } });
       }
+      
     },
     onRest: () => {
       if (scrollTrackPercentage <= 20) {
@@ -50,9 +50,7 @@ const Content = ({
   const animationScene2 = useSpring({
     from: { opacity: 0 },
     to: async (next, cancel) => {
-      //await next({ opacity: 1 });
-      setInitialDelayOnScene0(false);
-      if (scrollTrackPercentage >= 13 && scrollTrackPercentage <= 87) {
+      if (scrollTrackPercentage >= 11 && scrollTrackPercentage <= 89) {
         setVisibleScene2(true);
         await next({ opacity: 1, config: { duration: 1000 } });
       } else {
@@ -60,7 +58,7 @@ const Content = ({
       }
     },
     onRest: () => {
-      if (scrollTrackPercentage >= 13 && scrollTrackPercentage <= 87) {
+      if (scrollTrackPercentage >= 11 && scrollTrackPercentage <= 89) {
         setVisibleScene2(true);
       } else {
         setVisibleScene2(false);
