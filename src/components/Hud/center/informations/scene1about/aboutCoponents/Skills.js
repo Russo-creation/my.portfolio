@@ -19,16 +19,14 @@ import {
   SiStyledComponents,
   SiDocker,
   SiNginx,
-  SiTypescript, 
+  SiTypescript,
   SiAmazonaws,
   SiGraphql,
 } from "react-icons/si";
 
-
 import { AiOutlineCodeSandbox } from "react-icons/ai";
 
 import { CgFigma } from "react-icons/cg";
-
 
 import { SvgThreejs, SvgBlender, SvgSubstance, SvgArduino } from "./svgIcons";
 
@@ -39,14 +37,14 @@ import SkillCenter from "./skillsCompnents/SkillCenter";
 const skillsListFrontend = [
   { name: "HTML 5", ratio: 4, icon: <DiHtml5 /> },
   { name: "CSS 3", ratio: 4, icon: <DiCss3 /> },
-  { name: "SASS", ratio: 3, icon: <DiSass /> },
-  { name: "Styled components", ratio: 3, icon: <SiStyledComponents /> },
+  { name: "SASS", ratio: 4, icon: <DiSass /> },
+  { name: "Styled components", ratio: 4, icon: <SiStyledComponents /> },
   { name: "JAVASCRIPT", ratio: 3, icon: <DiJavascript1 /> },
   { name: "TypeScript", ratio: 2, icon: <SiTypescript /> },
-  { name: "JQUERY", ratio: 3, icon: <DiJqueryLogo /> },
-  { name: "REACT", ratio: 2, icon: <DiReact /> },
+  { name: "JQUERY", ratio: 2, icon: <DiJqueryLogo /> },
+  { name: "REACT", ratio: 3, icon: <DiReact /> },
   { name: "REACT Native", ratio: 1, icon: <DiReact /> },
-  { name: "THREE.JS", ratio: 3, icon: <SvgThreejs /> },
+  { name: "THREE.JS / R3F", ratio: 4, icon: <SvgThreejs /> },
   { name: "GraphQL", ratio: 2, icon: <SiGraphql /> },
 ];
 
@@ -57,19 +55,19 @@ const skillsListBackend = [
 ];
 
 const skillsListGraphic = [
-  { name: "PHOTOSHOP", ratio: 2, icon: <DiPhotoshop /> },
-  { name: "figma", ratio: 3, icon: <CgFigma /> },
-  { name: "BLENDER", ratio: 3, icon: <SvgBlender /> },
-  { name: "SUBSTANCE", ratio: 2, icon: <SvgSubstance /> },
+  { name: "PHOTOSHOP", ratio: 3, icon: <DiPhotoshop /> },
+  { name: "figma", ratio: 4, icon: <CgFigma /> },
+  { name: "BLENDER", ratio: 4, icon: <SvgBlender /> },
+  { name: "SUBSTANCE", ratio: 3, icon: <SvgSubstance /> },
 ];
 
 const skillsListOther = [
   { name: "Linux", ratio: 1, icon: <DiLinux /> },
   { name: "Docker", ratio: 2, icon: <SiDocker /> },
-  { name: "Github", ratio: 2, icon: <DiGithubBadge /> },
-  { name: "Nginx", ratio: 1, icon: <SiNginx /> },
-  { name: "AWS", ratio: 1, icon: <SiAmazonaws /> },
-  { name: "ARDUINO", ratio: 2, icon: <SvgArduino /> },
+  { name: "Github", ratio: 3, icon: <DiGithubBadge /> },
+  { name: "Nginx", ratio: 2, icon: <SiNginx /> },
+  { name: "AWS", ratio: 2, icon: <SiAmazonaws /> },
+  { name: "ARDUINO", ratio: 3, icon: <SvgArduino /> },
   { name: "3D PRINTING", ratio: 4, icon: <AiOutlineCodeSandbox /> },
 ];
 

@@ -3,6 +3,8 @@ import { FaGithub, FaReact } from "react-icons/fa";
 
 import { DiJavascript1, DiPhp, DiNodejsSmall } from "react-icons/di";
 
+import Awwwards from "../../../../../../icon/awwwards";
+
 import CertyficateRow from "./certificateComponents/CertificateRow";
 
 import html_13_01_2020 from "../../../../../../documents/javascript sass html jquery.pdf";
@@ -15,6 +17,7 @@ import nodejs_14_02_2020 from "../../../../../../documents/node mongodb.pdf";
 import php74_06_08_2020 from "../../../../../../documents/php 74.pdf";
 import react_19_08_2020 from "../../../../../../documents/react midd.pdf";
 import react_native_03_10_2020 from "../../../../../../documents/react native complete guide.pdf";
+import awwwards_my_portfolio_16_03_2021 from "../../../../../../documents/certificate-lukasz-macon-my-portfolio-hm.pdf";
 
 const certificateList = [
   {
@@ -78,8 +81,12 @@ const certificateList = [
     icon: <FaReact />,
   },
 
-
-  
+  {
+    name: "awwwards Honorable Mention",
+    date: "16.03.2021",
+    certyficate: awwwards_my_portfolio_16_03_2021,
+    icon: <Awwwards />,
+  },
 ];
 
 const Certificates = (props) => {

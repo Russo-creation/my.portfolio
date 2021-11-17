@@ -5,23 +5,23 @@ const intialState = {
   languageList: [
     {
       lang: "pl",
-      varName: "polski"
+      varName: "polski",
     },
     {
       lang: "en",
-      varName: "english"
-    }
+      varName: "english",
+    },
   ],
   languageBottomMenu: [
     {
       lang: "pl",
-      varName: "ustaw język zawartości"
+      varName: "ustaw język zawartości",
     },
     {
       lang: "en",
-      varName: "set langage content"
-    }
-  ]
+      varName: "set content langage",
+    },
+  ],
 };
 
 const reducer = (state = intialState, action) => {
@@ -30,7 +30,7 @@ const reducer = (state = intialState, action) => {
       if (state.languageSet !== action.language) {
         return {
           ...state,
-          languageSet: action.language
+          languageSet: action.language,
         };
       } else {
         return state;
