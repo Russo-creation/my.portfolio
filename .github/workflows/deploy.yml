@@ -3,7 +3,8 @@ name: gh-pages deploy
 on:
   push:
     branches: [master]
-
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
