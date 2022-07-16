@@ -3,8 +3,10 @@ name: gh-pages deploy
 on:
   push:
     branches: [master]
+
 permissions:
   contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,7 +17,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       # build the project using node
       - name: Set up Node.js ${{ matrix.node-version }}
@@ -23,22 +25,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # install node_modules dependency
-      - name: Install dependencies
-        run: npm install
-        env:
-          CI: false
-
-      # Deploy to gh-pages (included npm run build and gh-pages -d build inside)
-      - name: Deploy
+      - name: Install and Build
         run: |
-          git config --global user.name $user_name
-          git config --global user.email $user_email
-          git remote set-url origin https://${github_token}@github.com/${repository}
-          npm run deploy
-        env:
-          CI: false
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          repository: ${{ github.repository }}
+          npm ci
+          npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build # The folder the action should deploy.
