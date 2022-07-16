@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/my.portfolio/static/css/main.ac4caed3.chunk.css",
-    "main.js": "/my.portfolio/static/js/main.d2c60ffd.chunk.js",
-    "main.js.map": "/my.portfolio/static/js/main.d2c60ffd.chunk.js.map",
+    "main.js": "/my.portfolio/static/js/main.23818c5d.chunk.js",
+    "main.js.map": "/my.portfolio/static/js/main.23818c5d.chunk.js.map",
     "runtime-main.js": "/my.portfolio/static/js/runtime-main.d259077e.js",
     "runtime-main.js.map": "/my.portfolio/static/js/runtime-main.d259077e.js.map",
-    "static/js/2.c52432fa.chunk.js": "/my.portfolio/static/js/2.c52432fa.chunk.js",
-    "static/js/2.c52432fa.chunk.js.map": "/my.portfolio/static/js/2.c52432fa.chunk.js.map",
+    "static/js/2.fb9c8287.chunk.js": "/my.portfolio/static/js/2.fb9c8287.chunk.js",
+    "static/js/2.fb9c8287.chunk.js.map": "/my.portfolio/static/js/2.fb9c8287.chunk.js.map",
     "index.html": "/my.portfolio/index.html",
-    "precache-manifest.31cf2c832df437c983e6bf2c09ccd8fb.js": "/my.portfolio/precache-manifest.31cf2c832df437c983e6bf2c09ccd8fb.js",
+    "precache-manifest.f13e04dab2a773bca85bd8d2b774f51e.js": "/my.portfolio/precache-manifest.f13e04dab2a773bca85bd8d2b774f51e.js",
     "service-worker.js": "/my.portfolio/service-worker.js",
     "static/css/main.ac4caed3.chunk.css.map": "/my.portfolio/static/css/main.ac4caed3.chunk.css.map",
-    "static/js/2.c52432fa.chunk.js.LICENSE.txt": "/my.portfolio/static/js/2.c52432fa.chunk.js.LICENSE.txt",
+    "static/js/2.fb9c8287.chunk.js.LICENSE.txt": "/my.portfolio/static/js/2.fb9c8287.chunk.js.LICENSE.txt",
     "static/media/3d_assets.zip": "/my.portfolio/static/media/3d_assets.b05edf47.zip",
     "static/media/3d_scans.png": "/my.portfolio/static/media/3d_scans.ec5f6832.png",
     "static/media/artstation.png": "/my.portfolio/static/media/artstation.65089688.png",
     "static/media/bms.png": "/my.portfolio/static/media/bms.23d22154.png",
     "static/media/certificate-lukasz-macon-my-portfolio-hm.pdf": "/my.portfolio/static/media/certificate-lukasz-macon-my-portfolio-hm.c4e10485.pdf",
     "static/media/detalsellsite.png": "/my.portfolio/static/media/detalsellsite.0623fd2d.png",
+    "static/media/four_seasons.png": "/my.portfolio/static/media/four_seasons.70fd05d0.png",
     "static/media/github.pdf": "/my.portfolio/static/media/github.40470f86.pdf",
     "static/media/github.png": "/my.portfolio/static/media/github.cdaf2b02.png",
     "static/media/impress.png": "/my.portfolio/static/media/impress.06922545.png",
@@ -39,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d259077e.js",
-    "static/js/2.c52432fa.chunk.js",
+    "static/js/2.fb9c8287.chunk.js",
     "static/css/main.ac4caed3.chunk.css",
-    "static/js/main.d2c60ffd.chunk.js"
+    "static/js/main.23818c5d.chunk.js"
   ]
 }
