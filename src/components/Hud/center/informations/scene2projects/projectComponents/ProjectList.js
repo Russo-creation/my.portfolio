@@ -38,6 +38,8 @@ import imageArtstation from '../../../../../../images/projects/artstation.png';
 //9 github
 //10 artstation graphics
 
+/// go to https://www.qr-online.pl/index.php set size 10 to generate QR code
+
 const ProjectList = [
   //////////////////////------------------------- Schoolio
   {
@@ -72,11 +74,11 @@ const ProjectList = [
     description: [
       {
         lang: 'en',
-        value: '3D Education platform',
+        value: '3D Education platform concept for kids',
       },
       {
         lang: 'pl',
-        value: '3D platforma edukacyjna',
+        value: 'Koncept platformy edukacyjnej w 3D dla dzieci',
       },
     ],
     intresting: [],
@@ -117,7 +119,7 @@ const ProjectList = [
       {
         lang: 'pl',
         value:
-          '3D strona docelowa z postacią którą można sie poruszać oraz interakcjami',
+          'Trójwymiarowa strona internetowa z interaktywną postacią którą można sie poruszać',
       },
     ],
     intresting: [
@@ -159,7 +161,7 @@ const ProjectList = [
       },
       {
         lang: 'pl',
-        value: 'Intro do Gry NFT',
+        value: 'Intro do gry NFT',
       },
     ],
     intresting: [
@@ -201,12 +203,12 @@ const ProjectList = [
       {
         lang: 'en',
         value:
-          '3D Gambling game -Slot Machine 4 seasons. App has implemented animation for showing winning lines, bonuses (different for each seasons), big wins, total wins (total big, huge or giant wins) or auto mode.',
+          '3D Gambling game - 4 Seasons Slot Machine. App has implemented animations for showing winning lines, bonuses (different for each seasons), big wins, total wins (total big, huge or giant wins) or auto mode.',
       },
       {
         lang: 'pl',
         value:
-          '3D Gra hazardowa - Slot Machine 4 seasons. Aplikacja posiada zaimplementowane wyświetlanie wygrywających linii, bonusy (różne dla każdego sezonu), duże wygrane spiny, całkowite wygrane (total big, huge czy giant wins) oraz tryb auto.',
+          'Gra hazardowa 3D - 4 Seasons Slot Machine. Aplikacja posiada zaimplementowane wyświetlanie wygrywających linii, bonusy (różne dla każdego sezonu), duże wygrane spiny, całkowite wygrane (total big, huge czy giant wins) oraz tryb auto.',
       },
     ],
     intresting: ['staging.infinity.games/four_seasons/index.html'],
