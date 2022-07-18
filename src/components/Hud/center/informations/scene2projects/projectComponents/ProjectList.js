@@ -1,3 +1,6 @@
+import qrSchoolio from '../../../../../../images/projects/qrSchoolio.png';
+import qrClique from '../../../../../../images/projects/qrClique.png';
+import qrGenopets from '../../../../../../images/projects/qrGenopets.png';
 import qrSlotMachine from '../../../../../../images/projects/qrSlotMachine.png';
 import qrMyPortfolio from '../../../../../../images/projects/qrMyPortfolio.png';
 import qrInvidia from '../../../../../../images/projects/qrInvidia.png';
@@ -10,6 +13,9 @@ import qrBms from '../../../../../../images/projects/qrBms.png';
 import qrGithub from '../../../../../../images/projects/qrGithub.png';
 import qrArtstation from '../../../../../../images/projects/qrArtstation.png';
 
+import imageSchoolio from '../../../../../../images/projects/schoolio.png';
+import imageClique from '../../../../../../images/projects/clique.png';
+import imageGenopets from '../../../../../../images/projects/genopets.png';
 import imageFourSeasons from '../../../../../../images/projects/four_seasons.png';
 import imageMyportolio from '../../../../../../images/projects/myportfolio.png';
 import imageInvidia from '../../../../../../images/projects/invidia.png';
@@ -33,6 +39,134 @@ import imageArtstation from '../../../../../../images/projects/artstation.png';
 //10 artstation graphics
 
 const ProjectList = [
+  //////////////////////------------------------- Schoolio
+  {
+    tittle: [
+      {
+        lang: 'pl',
+        value: 'Schoolio',
+      },
+      {
+        lang: 'en',
+        value: 'Schoolio',
+      },
+    ],
+
+    addres: 'schoolio.world/',
+    qr: qrSchoolio,
+    image: imageSchoolio,
+    technology: [
+      'react',
+      'three.js',
+      'react-three-fiber',
+      'zustand',
+      'sass',
+      'html',
+      'docker',
+      'AWS',
+      'Nginx',
+      'blender',
+      'substance',
+      'photoshop',
+    ],
+    description: [
+      {
+        lang: 'en',
+        value: '3D Education platform',
+      },
+      {
+        lang: 'pl',
+        value: '3D platforma edukacyjna',
+      },
+    ],
+    intresting: [],
+  },
+  //////////////////////------------------------- Clique
+  {
+    tittle: [
+      {
+        lang: 'pl',
+        value: 'Clique',
+      },
+      {
+        lang: 'en',
+        value: 'Clique',
+      },
+    ],
+
+    addres: 'lukasz-macon.com/clique',
+    qr: qrClique,
+    image: imageClique,
+    technology: [
+      'react',
+      'three.js',
+      'react-three-fiber',
+      'zustand',
+      'sass',
+      'html',
+      'blender',
+      'substance',
+      'photoshop',
+    ],
+    description: [
+      {
+        lang: 'en',
+        value:
+          '3D Landing page with character movement on scene with interactions',
+      },
+      {
+        lang: 'pl',
+        value:
+          '3D strona docelowa z postacią którą można sie poruszać oraz interakcjami',
+      },
+    ],
+    intresting: [
+      'lukasz-macon.com/clique/library/',
+      'lukasz-macon.com/clique/temple/',
+    ],
+  },
+  //////////////////////------------------------- Genopets
+  {
+    tittle: [
+      {
+        lang: 'pl',
+        value: 'Genopets- intro',
+      },
+      {
+        lang: 'en',
+        value: 'Genopets- intro',
+      },
+    ],
+
+    addres: 'lukasz-macon.com/genopets/intro-scene/',
+    qr: qrGenopets,
+    image: imageGenopets,
+    technology: [
+      'react',
+      'three.js',
+      'react-three-fiber',
+      'zustand',
+      'sass',
+      'html',
+      'blender',
+      'substance',
+      'photoshop',
+    ],
+    description: [
+      {
+        lang: 'en',
+        value: 'Intro for NFT game',
+      },
+      {
+        lang: 'pl',
+        value: 'Intro do Gry NFT',
+      },
+    ],
+    intresting: [
+      'lukasz-macon.com/genopets/synthwave-scene/',
+      'lukasz-macon.com/genopets/playground/',
+    ],
+  },
   //////////////////////-------------------------Slot Machine - 4 seasons
   {
     tittle: [
