@@ -1,24 +1,26 @@
 {
   "files": {
     "main.css": "/my.portfolio/static/css/main.ac4caed3.chunk.css",
-    "main.js": "/my.portfolio/static/js/main.23818c5d.chunk.js",
-    "main.js.map": "/my.portfolio/static/js/main.23818c5d.chunk.js.map",
+    "main.js": "/my.portfolio/static/js/main.c57af190.chunk.js",
+    "main.js.map": "/my.portfolio/static/js/main.c57af190.chunk.js.map",
     "runtime-main.js": "/my.portfolio/static/js/runtime-main.d259077e.js",
     "runtime-main.js.map": "/my.portfolio/static/js/runtime-main.d259077e.js.map",
-    "static/js/2.fb9c8287.chunk.js": "/my.portfolio/static/js/2.fb9c8287.chunk.js",
-    "static/js/2.fb9c8287.chunk.js.map": "/my.portfolio/static/js/2.fb9c8287.chunk.js.map",
+    "static/js/2.db8e12f6.chunk.js": "/my.portfolio/static/js/2.db8e12f6.chunk.js",
+    "static/js/2.db8e12f6.chunk.js.map": "/my.portfolio/static/js/2.db8e12f6.chunk.js.map",
     "index.html": "/my.portfolio/index.html",
-    "precache-manifest.f13e04dab2a773bca85bd8d2b774f51e.js": "/my.portfolio/precache-manifest.f13e04dab2a773bca85bd8d2b774f51e.js",
+    "precache-manifest.1ad330910e1f06ed4e161a358c2216e8.js": "/my.portfolio/precache-manifest.1ad330910e1f06ed4e161a358c2216e8.js",
     "service-worker.js": "/my.portfolio/service-worker.js",
     "static/css/main.ac4caed3.chunk.css.map": "/my.portfolio/static/css/main.ac4caed3.chunk.css.map",
-    "static/js/2.fb9c8287.chunk.js.LICENSE.txt": "/my.portfolio/static/js/2.fb9c8287.chunk.js.LICENSE.txt",
+    "static/js/2.db8e12f6.chunk.js.LICENSE.txt": "/my.portfolio/static/js/2.db8e12f6.chunk.js.LICENSE.txt",
     "static/media/3d_assets.zip": "/my.portfolio/static/media/3d_assets.b05edf47.zip",
     "static/media/3d_scans.png": "/my.portfolio/static/media/3d_scans.ec5f6832.png",
     "static/media/artstation.png": "/my.portfolio/static/media/artstation.65089688.png",
     "static/media/bms.png": "/my.portfolio/static/media/bms.23d22154.png",
     "static/media/certificate-lukasz-macon-my-portfolio-hm.pdf": "/my.portfolio/static/media/certificate-lukasz-macon-my-portfolio-hm.c4e10485.pdf",
+    "static/media/clique.png": "/my.portfolio/static/media/clique.cc597945.png",
     "static/media/detalsellsite.png": "/my.portfolio/static/media/detalsellsite.0623fd2d.png",
     "static/media/four_seasons.png": "/my.portfolio/static/media/four_seasons.70fd05d0.png",
+    "static/media/genopets.png": "/my.portfolio/static/media/genopets.e31268ea.png",
     "static/media/github.pdf": "/my.portfolio/static/media/github.40470f86.pdf",
     "static/media/github.png": "/my.portfolio/static/media/github.cdaf2b02.png",
     "static/media/impress.png": "/my.portfolio/static/media/impress.06922545.png",
@@ -36,12 +38,13 @@
     "static/media/react native complete guide.pdf": "/my.portfolio/static/media/react native complete guide.4217ba30.pdf",
     "static/media/react od podstaw.pdf": "/my.portfolio/static/media/react od podstaw.e8af1138.pdf",
     "static/media/satara_night_1k_edt.hdr": "/my.portfolio/static/media/satara_night_1k_edt.a0a9e99e.hdr",
+    "static/media/schoolio.png": "/my.portfolio/static/media/schoolio.f5ae2274.png",
     "static/media/simple_hd_viewer.png": "/my.portfolio/static/media/simple_hd_viewer.454d59fa.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d259077e.js",
-    "static/js/2.fb9c8287.chunk.js",
+    "static/js/2.db8e12f6.chunk.js",
     "static/css/main.ac4caed3.chunk.css",
-    "static/js/main.23818c5d.chunk.js"
+    "static/js/main.c57af190.chunk.js"
   ]
 }
