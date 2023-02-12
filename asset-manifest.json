@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my.portfolio/static/css/main.ac4caed3.chunk.css",
-    "main.js": "/my.portfolio/static/js/main.36fd9cda.chunk.js",
-    "main.js.map": "/my.portfolio/static/js/main.36fd9cda.chunk.js.map",
+    "main.css": "/my.portfolio/static/css/main.867f2bdc.chunk.css",
+    "main.js": "/my.portfolio/static/js/main.9f8650a6.chunk.js",
+    "main.js.map": "/my.portfolio/static/js/main.9f8650a6.chunk.js.map",
     "runtime-main.js": "/my.portfolio/static/js/runtime-main.d259077e.js",
     "runtime-main.js.map": "/my.portfolio/static/js/runtime-main.d259077e.js.map",
-    "static/js/2.db8e12f6.chunk.js": "/my.portfolio/static/js/2.db8e12f6.chunk.js",
-    "static/js/2.db8e12f6.chunk.js.map": "/my.portfolio/static/js/2.db8e12f6.chunk.js.map",
+    "static/js/2.4dd1a855.chunk.js": "/my.portfolio/static/js/2.4dd1a855.chunk.js",
+    "static/js/2.4dd1a855.chunk.js.map": "/my.portfolio/static/js/2.4dd1a855.chunk.js.map",
     "index.html": "/my.portfolio/index.html",
-    "precache-manifest.8e456c62ec75ad14349e09aeafc3a644.js": "/my.portfolio/precache-manifest.8e456c62ec75ad14349e09aeafc3a644.js",
+    "precache-manifest.4e29a1883b0f22467567ed50c97775ee.js": "/my.portfolio/precache-manifest.4e29a1883b0f22467567ed50c97775ee.js",
     "service-worker.js": "/my.portfolio/service-worker.js",
-    "static/css/main.ac4caed3.chunk.css.map": "/my.portfolio/static/css/main.ac4caed3.chunk.css.map",
-    "static/js/2.db8e12f6.chunk.js.LICENSE.txt": "/my.portfolio/static/js/2.db8e12f6.chunk.js.LICENSE.txt",
+    "static/css/main.867f2bdc.chunk.css.map": "/my.portfolio/static/css/main.867f2bdc.chunk.css.map",
+    "static/js/2.4dd1a855.chunk.js.LICENSE.txt": "/my.portfolio/static/js/2.4dd1a855.chunk.js.LICENSE.txt",
     "static/media/3d_assets.zip": "/my.portfolio/static/media/3d_assets.b05edf47.zip",
     "static/media/3d_scans.png": "/my.portfolio/static/media/3d_scans.ec5f6832.png",
     "static/media/artstation.png": "/my.portfolio/static/media/artstation.65089688.png",
@@ -39,12 +39,13 @@
     "static/media/react od podstaw.pdf": "/my.portfolio/static/media/react od podstaw.e8af1138.pdf",
     "static/media/satara_night_1k_edt.hdr": "/my.portfolio/static/media/satara_night_1k_edt.a0a9e99e.hdr",
     "static/media/schoolio.png": "/my.portfolio/static/media/schoolio.f5ae2274.png",
-    "static/media/simple_hd_viewer.png": "/my.portfolio/static/media/simple_hd_viewer.454d59fa.png"
+    "static/media/simple_hd_viewer.png": "/my.portfolio/static/media/simple_hd_viewer.454d59fa.png",
+    "static/media/vrrb.png": "/my.portfolio/static/media/vrrb.f3ba943f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d259077e.js",
-    "static/js/2.db8e12f6.chunk.js",
-    "static/css/main.ac4caed3.chunk.css",
-    "static/js/main.36fd9cda.chunk.js"
+    "static/js/2.4dd1a855.chunk.js",
+    "static/css/main.867f2bdc.chunk.css",
+    "static/js/main.9f8650a6.chunk.js"
   ]
 }
