@@ -1,9 +1,9 @@
-import React from "react";
-import IntrestingLinks from "./IntrestingLinks";
+import React from 'react';
+import IntrestingLinks from './IntrestingLinks';
 
 const ProjectItem = (props) => {
   const tehnologyList = props.technology.map((item, index) =>
-    index === 0 ? item : ", " + item
+    index === 0 ? item : ', ' + item
   );
 
   const intestingList = props.intresting.map((item, index) => (
@@ -27,7 +27,7 @@ const ProjectItem = (props) => {
       <div className="projectTopData">
         <div className="projectTopDataLeft">
           <a
-            href={`http://${props.addres}`}
+            href={props.addres}
             target="_blank"
             rel="noopener noreferrer"
             className="qrLink"
@@ -41,25 +41,17 @@ const ProjectItem = (props) => {
           </a>
 
           <div>
-            {props.languageSet === "en" ? "website address" : null}
-            {props.languageSet === "pl" ? "strona internetowa" : null}
+            {props.languageSet === 'en' ? 'website address' : null}
+            {props.languageSet === 'pl' ? 'strona internetowa' : null}
           </div>
           <div>
-            <a
-              href={`http://${props.addres}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={props.addres} target="_blank" rel="noopener noreferrer">
               {props.addres}
             </a>
           </div>
         </div>
         <div className="projectTopDataRight">
-          <a
-            href={`http://${props.addres}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={props.addres} target="_blank" rel="noopener noreferrer">
             <img
               className="projectImageSite"
               src={props.image}
@@ -74,8 +66,8 @@ const ProjectItem = (props) => {
       {tehnologyList.length > 0 ? (
         <div className="projectFoldCage">
           <div className="projectFoldTittle">
-            {props.languageSet === "en" ? "Technologies" : null}
-            {props.languageSet === "pl" ? "Technologie" : null}
+            {props.languageSet === 'en' ? 'Technologies' : null}
+            {props.languageSet === 'pl' ? 'Technologie' : null}
           </div>
           <div className="projectTechnologyList">{tehnologyList}</div>
         </div>
@@ -84,8 +76,8 @@ const ProjectItem = (props) => {
       {descriptionLanguageVal[0] !== null ? (
         <div className="projectFoldCage">
           <div className="projectFoldTittle">
-            {props.languageSet === "en" ? "short description" : null}
-            {props.languageSet === "pl" ? "krótki opis" : null}
+            {props.languageSet === 'en' ? 'short description' : null}
+            {props.languageSet === 'pl' ? 'krótki opis' : null}
           </div>
           <div className="projectTechnologyList">{descriptionLanguageVal}</div>
         </div>
@@ -94,8 +86,8 @@ const ProjectItem = (props) => {
       {intestingList.length > 0 ? (
         <div className="projectFoldCage">
           <div className="projectFoldTittle">
-            {props.languageSet === "en" ? "Might found intresting" : null}
-            {props.languageSet === "pl" ? "Może Cię zainteresować" : null}
+            {props.languageSet === 'en' ? 'Might found intresting' : null}
+            {props.languageSet === 'pl' ? 'Może Cię zainteresować' : null}
           </div>
           {intestingList}
         </div>

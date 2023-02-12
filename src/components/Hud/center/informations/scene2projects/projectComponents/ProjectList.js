@@ -1,3 +1,4 @@
+import qrVRRB from '../../../../../../images/projects/qrVRRB.png';
 import qrSchoolio from '../../../../../../images/projects/qrSchoolio.png';
 import qrClique from '../../../../../../images/projects/qrClique.png';
 import qrGenopets from '../../../../../../images/projects/qrGenopets.png';
@@ -13,6 +14,7 @@ import qrBms from '../../../../../../images/projects/qrBms.png';
 import qrGithub from '../../../../../../images/projects/qrGithub.png';
 import qrArtstation from '../../../../../../images/projects/qrArtstation.png';
 
+import imageVRRB from '../../../../../../images/projects/vrrb.png';
 import imageSchoolio from '../../../../../../images/projects/schoolio.png';
 import imageClique from '../../../../../../images/projects/clique.png';
 import imageGenopets from '../../../../../../images/projects/genopets.png';
@@ -46,6 +48,52 @@ const ProjectList = [
     tittle: [
       {
         lang: 'pl',
+        value: 'VRRB',
+      },
+      {
+        lang: 'en',
+        value: 'VRRB',
+      },
+    ],
+
+    addres: 'https://vrrb.io/',
+    qr: qrVRRB,
+    image: imageVRRB,
+    technology: [
+      'react',
+      'three.js',
+      'react-three-fiber',
+      'zustand',
+      'styled-components',
+      'html',
+      'blender',
+      'substance',
+      'photoshop',
+    ],
+    description: [
+      {
+        lang: 'en',
+        value:
+          'Website for VRRB: Web-Scale Blockchain with innovative low energy consumption consensus algorithm and precious metals inspired monetary policy',
+      },
+      {
+        lang: 'pl',
+        value:
+          'Strona internetowa dla VRRB: Web-Scale Blockchain z innowacyjnym algorytmem o niskim zużyciu energii i metalami szlachetnymi inspirowane polityką pieniężną',
+      },
+    ],
+    intresting: [
+      'https://vrrb.io/library',
+      'https://vrrb.io/laboratory',
+      'https://vrrb.io/school',
+      'https://vrrb.io/club',
+    ],
+  },
+  //////////////////////------------------------- Schoolio
+  {
+    tittle: [
+      {
+        lang: 'pl',
         value: 'Schoolio',
       },
       {
@@ -54,7 +102,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'schoolio.world/',
+    addres: 'http://schoolio.world/',
     qr: qrSchoolio,
     image: imageSchoolio,
     technology: [
@@ -81,7 +129,7 @@ const ProjectList = [
         value: 'Koncept platformy edukacyjnej w 3D dla dzieci',
       },
     ],
-    intresting: [],
+    intresting: ['http://schoolio.world/dino-world'],
   },
   //////////////////////------------------------- Clique
   {
@@ -96,7 +144,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'lukasz-macon.com/clique',
+    addres: 'https://lukasz-macon.com/clique/',
     qr: qrClique,
     image: imageClique,
     technology: [
@@ -123,8 +171,8 @@ const ProjectList = [
       },
     ],
     intresting: [
-      'lukasz-macon.com/clique/library/',
-      'lukasz-macon.com/clique/temple/',
+      'https://lukasz-macon.com/clique/library/',
+      'https://lukasz-macon.com/clique/temple/',
     ],
   },
   //////////////////////------------------------- Genopets
@@ -140,7 +188,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'lukasz-macon.com/genopets/intro-scene/',
+    addres: 'https://lukasz-macon.com/genopets/intro-scene/',
     qr: qrGenopets,
     image: imageGenopets,
     technology: [
@@ -165,8 +213,8 @@ const ProjectList = [
       },
     ],
     intresting: [
-      'lukasz-macon.com/genopets/synthwave-scene/',
-      'lukasz-macon.com/genopets/playground/',
+      'https://lukasz-macon.com/genopets/synthwave-scene/',
+      'https://lukasz-macon.com/genopets/playground/',
     ],
   },
   //////////////////////-------------------------Slot Machine - 4 seasons
@@ -182,7 +230,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'lukasz-macon.com/four_seasons',
+    addres: 'https://lukasz-macon.com/four_seasons/',
     qr: qrSlotMachine,
     image: imageFourSeasons,
     technology: [
@@ -211,7 +259,7 @@ const ProjectList = [
           'Gra hazardowa 3D - 4 Seasons Slot Machine. Aplikacja posiada zaimplementowane wyświetlanie wygrywających linii, bonusy (różne dla każdego sezonu), duże wygrane spiny, całkowite wygrane (total big, huge czy giant wins) oraz tryb auto.',
       },
     ],
-    intresting: ['staging.infinity.games/four_seasons/index.html'],
+    intresting: [],
   },
   //////////////////////-------------------------My portfolio
   {
@@ -226,7 +274,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'russo-creation.github.io/my.portfolio',
+    addres: 'https://russo-creation.github.io/my.portfolio/',
     qr: qrMyPortfolio,
     image: imageMyportolio,
     technology: [
@@ -250,7 +298,7 @@ const ProjectList = [
           'strona wykonana i zaprojektowana w całości przeze mnie. Głównym założeniem było przedstawienie możliwości sceny 3D przy użyciu silnika czasu rzeczywistego korzystając z biblioteki three.js prezentowanej w przeglądarce internetowej.',
       },
     ],
-    intresting: ['github.com/Russo-creation/my.portfolio'],
+    intresting: ['https://github.com/Russo-creation/my.portfolio'],
   },
   //////////////////////-------------------------simple viewer
   {
@@ -265,7 +313,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'russo-creation.github.io/simple_hd_viewer',
+    addres: 'https://russo-creation.github.io/simple_hd_viewer/',
     qr: qrSimpleHdViewer,
     image: imageSimpleHdViewer,
     technology: [
@@ -290,7 +338,7 @@ const ProjectList = [
           'Prosta przeglądarkowe scena 3D inspirowana grą „The last od us” stworzona, aby móc przetestować możliwości biblioteki React three fiber',
       },
     ],
-    intresting: ['github.com/Russo-creation/simple_hd_viewer'],
+    intresting: ['https://github.com/Russo-creation/simple_hd_viewer'],
   },
   //////////////////////-------------------------3d scanned face
   {
@@ -305,7 +353,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'www.invidiaeyewear.com/3d_scans',
+    addres: 'https://www.invidiaeyewear.com/3d_scans/',
     qr: qr3d_scans,
     image: image3d_scans,
     technology: [
@@ -344,7 +392,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'www.invidiaeyewear.com',
+    addres: 'https://www.invidiaeyewear.com/',
     qr: qrInvidia,
     image: imageInvidia,
     technology: [
@@ -371,8 +419,8 @@ const ProjectList = [
       },
     ],
     intresting: [
-      'www.invidiaeyewear.com/3d_fitting_room.php',
-      'www.invidiaeyewear.com/cyberpunk_steampunk.php',
+      'https://www.invidiaeyewear.com/3d_fitting_room.php',
+      'https://www.invidiaeyewear.com/cyberpunk_steampunk.php',
     ],
   },
 
@@ -389,7 +437,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'www.invidiaeyewear.com/detalsellsite',
+    addres: 'https://www.invidiaeyewear.com/detalsellsite/',
     qr: qrDetalsellsite,
     image: imageDetalsellsite,
     technology: [
@@ -428,7 +476,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'www.invidiaeyewear.com/impress',
+    addres: 'https://www.invidiaeyewear.com/impress/',
     qr: qrImpress,
     image: imageImpress,
     technology: ['jquery', 'javascript', 'css3', 'html', 'php', 'mysql'],
@@ -459,7 +507,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'neooptica.pl',
+    addres: 'https://neooptica.pl/',
     qr: qrNeooptica,
     image: imageNeooptica,
     technology: ['jquery', 'javascript', 'css3', 'html', 'php', 'mysql'],
@@ -489,7 +537,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'www.youtube.com/watch?v=Q23D9dMsx2M',
+    addres: 'https://www.youtube.com/watch?v=Q23D9dMsx2M',
     qr: qrBms,
     image: imageBms,
     technology: [
@@ -526,7 +574,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'github.com/Russo-creation',
+    addres: 'https://github.com/Russo-creation',
     qr: qrGithub,
     image: imageGithub,
     technology: [],
@@ -555,7 +603,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'russo-creation.artstation.com',
+    addres: 'https://russo-creation.artstation.com/',
     qr: qrArtstation,
     image: imageArtstation,
     technology: [],
