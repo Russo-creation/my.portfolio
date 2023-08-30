@@ -56,7 +56,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'https://vrrb.io/',
+    addres: 'https://lukasz-macon.com/vrrb/',
     qr: qrVRRB,
     image: imageVRRB,
     technology: [
@@ -83,10 +83,11 @@ const ProjectList = [
       },
     ],
     intresting: [
-      'https://vrrb.io/library',
-      'https://vrrb.io/laboratory',
-      'https://vrrb.io/school',
-      'https://vrrb.io/club',
+      'https://lukasz-macon.com/clique/library',
+      'https://lukasz-macon.com/clique/laboratory',
+      'https://lukasz-macon.com/clique/school',
+      'https://lukasz-macon.com/clique/club',
+      'https://lukasz-macon.com/clique/roadmap',
     ],
   },
   //////////////////////------------------------- Schoolio
