@@ -83,11 +83,11 @@ const ProjectList = [
       },
     ],
     intresting: [
-      'https://lukasz-macon.com/clique/library',
-      'https://lukasz-macon.com/clique/laboratory',
-      'https://lukasz-macon.com/clique/school',
-      'https://lukasz-macon.com/clique/club',
-      'https://lukasz-macon.com/clique/roadmap',
+      'https://lukasz-macon.com/vrrb/library',
+      'https://lukasz-macon.com/vrrb/laboratory',
+      'https://lukasz-macon.com/vrrb/school',
+      'https://lukasz-macon.com/vrrb/club',
+      'https://lukasz-macon.com/vrrb/roadmap',
     ],
   },
   //////////////////////------------------------- Schoolio
