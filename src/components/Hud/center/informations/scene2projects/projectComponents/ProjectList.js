@@ -103,7 +103,7 @@ const ProjectList = [
       },
     ],
 
-    addres: 'http://schoolio.world/',
+    addres: 'https://dinoworld.schoolio.com',
     qr: qrSchoolio,
     image: imageSchoolio,
     technology: [
@@ -130,7 +130,7 @@ const ProjectList = [
         value: 'Koncept platformy edukacyjnej w 3D dla dzieci',
       },
     ],
-    intresting: ['http://schoolio.world/dino-world'],
+    intresting: ['https://dinoworld.schoolio.com/dino-world'],
   },
   //////////////////////------------------------- Clique
   {
